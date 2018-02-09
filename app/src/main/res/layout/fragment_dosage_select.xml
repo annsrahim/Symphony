@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/light_blue"
+                android:id="@+id/toolbar_tv_back"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/provide_dosage"
+                android:textColor="@color/light_blue"
+                android:id="@+id/toolbar_tv_title"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/light_blue"
+                android:id="@+id/toolbar_tv_save"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/rl_alert_none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/White"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/iv_dosage_select"
+            android:text="@string/Dosage"
+            android:textColor="@color/default_text_color_2"
+            android:textSize="@dimen/_12sdp" />
+
+        <EditText
+            android:id="@+id/ed_dosage"
+            android:background="@color/White"
+            android:hint="ex: 15"
+            android:textColorHint="@color/light_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:inputType="number"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/default_text_color_2"
+             />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_select_unit_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/White"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_10sdp"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_toEndOf="@+id/iv_dosage_select"
+            android:text="@string/Unit"
+            android:textColor="@color/default_text_color_2"
+            android:textSize="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/iv_dosage_none"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_more_gray"
+            android:visibility="gone"
+             />
+        <TextView
+            android:id="@+id/tv_dosage_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:text="@string/Unit"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textSize="@dimen/_15sdp"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

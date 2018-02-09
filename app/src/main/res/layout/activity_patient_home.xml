@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="demo.acube.application.healthcare.activity.patient.acitivity.dashboard.PatientHomeActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/splash_screen" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONTACT MY HEALTHCARE PROVIDER"
+            android:paddingTop="@dimen/_2sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_2sdp"
+            android:textSize="@dimen/_12sdp"/>
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="2"
+       >
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:id="@+id/ll_four_option_conainer"
+               >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:orientation="horizontal"
+                       android:layout_weight="1">
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:background="@drawable/patient_home_border_bg"
+                           >
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+                               <RelativeLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="@drawable/bg_home_q1"
+                                   android:layout_marginRight="1dp">
+
+                                   <ImageView
+                                       android:id="@+id/iv_home_call"
+                                       android:layout_width="@dimen/_75sdp"
+                                       android:layout_height="@dimen/_75sdp"
+                                       android:layout_centerInParent="true"
+                                       android:src="@drawable/ic_home_call_with_tag"
+                                       />
+
+                               </RelativeLayout>
+
+                               <TextView
+                                   android:id="@+id/tv_notification_call"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:layout_marginBottom="@dimen/_25sdp"
+                                   android:layout_marginStart="@dimen/_25sdp"
+                                   android:background="@drawable/circle_layout_bg"
+                                   android:paddingBottom="@dimen/_1sdp"
+                                   android:paddingEnd="@dimen/_5sdp"
+                                   android:paddingStart="@dimen/_5sdp"
+                                   android:paddingTop="@dimen/_1sdp"
+                                   android:text="1"
+                                   android:textColor="@color/White"
+                                   android:textSize="@dimen/_10sdp"
+                                   android:visibility="gone" />
+                           </FrameLayout>
+
+
+                       </RelativeLayout>
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_weight="1"
+                           android:background="@drawable/patient_home_border_bg">
+                           <FrameLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent">
+
+                               <RelativeLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:background="@drawable/bg_home_q2"
+                                   >
+
+                                   <ImageView
+                                       android:id="@+id/iv_chat_icon"
+                                       android:layout_width="@dimen/_75sdp"
+                                       android:layout_height="@dimen/_75sdp"
+                                       android:layout_centerInParent="true"
+                                       android:onClick="doChatNow"
+                                       android:scaleType="centerCrop"
+                                       android:src="@drawable/ic_home_text" />
+                               </RelativeLayout>
+
+                               <TextView
+                                   android:id="@+id/tv_notification_text"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_gravity="center"
+                                   android:layout_marginBottom="@dimen/_20sdp"
+                                   android:layout_marginStart="@dimen/_20sdp"
+                                   android:background="@drawable/circle_layout_bg"
+                                   android:paddingBottom="@dimen/_1sdp"
+                                   android:paddingEnd="@dimen/_5sdp"
+                                   android:paddingStart="@dimen/_5sdp"
+                                   android:paddingTop="@dimen/_1sdp"
+                                   android:text="1"
+                                   android:textColor="@color/White"
+                                   android:textSize="@dimen/_10sdp"
+                                   android:visibility="gone" />
+
+
+
+                           </FrameLayout>
+
+                       </RelativeLayout>
+
+                   </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:background="@drawable/patient_home_border_bg">
+                       <FrameLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent">
+
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/bg_home_q3"
+                           android:layout_marginTop="1dp"
+                           android:layout_marginRight="1dp">
+                           <ImageView
+                               android:layout_width="@dimen/_75sdp"
+                               android:layout_height="@dimen/_75sdp"
+                               android:layout_centerInParent="true"
+                               android:scaleType="centerCrop"
+                               android:onClick="doVideoCall"
+                               android:src="@drawable/ic_home_virtual_visit" />
+                       </RelativeLayout>
+                       <TextView
+                            android:id="@+id/tv_notification_visit"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:background="@drawable/circle_layout_bg"
+                           android:text="1"
+                           android:paddingEnd="@dimen/_5sdp"
+                           android:paddingStart="@dimen/_5sdp"
+                           android:paddingTop="@dimen/_2sdp"
+                           android:paddingBottom="@dimen/_2sdp"
+                           android:textColor="@color/White"
+                           android:textSize="@dimen/_10sdp"
+                           android:layout_gravity="center"
+                           android:layout_marginStart="@dimen/_25sdp"
+                           android:layout_marginBottom="@dimen/_20sdp"
+                           android:visibility="gone"
+                           />
+                       </FrameLayout>
+                   </RelativeLayout>
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:background="@drawable/patient_home_border_bg">
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/bg_home_q4"
+                           android:layout_marginTop="1dp"
+                           android:onClick="doScheduleAppointment"
+                           >
+                           <ImageView
+                               android:layout_width="@dimen/_75sdp"
+                               android:layout_height="@dimen/_75sdp"
+                               android:layout_centerInParent="true"
+                               android:scaleType="centerCrop"
+                               android:src="@drawable/ic_home_appointment" />
+                       </RelativeLayout>
+                   </RelativeLayout>
+
+               </LinearLayout>
+           </LinearLayout>
+       <de.hdodenhof.circleimageview.CircleImageView
+           xmlns:app="http://schemas.android.com/apk/res-auto"
+           android:id="@+id/profile_image"
+           android:layout_width="@dimen/_110sdp"
+           android:layout_height="@dimen/_110sdp"
+           android:src="@drawable/gpc_placeholder_physician_full"
+           android:layout_centerInParent="true"
+           />
+
+
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+       android:layout_weight="3"
+        android:orientation="vertical"
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_list_blue"
+                android:layout_weight="1"
+                android:onClick="showMySchedule">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="My Schedule"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textSize="@dimen/_12sdp"/>
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="match_parent"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:src="@drawable/ic_my_schedule"
+                        android:layout_marginRight="@dimen/_5sdp"/>
+
+                    <TextView
+                        android:id="@+id/tv_notification_appointment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@drawable/circle_layout_bg"
+                        android:paddingBottom="@dimen/_1sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_1sdp"
+                        android:text="1"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+
+
+            </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_list_seprator_blue" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_list_blue"
+            android:layout_weight="1"
+            android:onClick="showTeleHealthTeam">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="My TeleHealth Team"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_2sdp"
+                android:textSize="@dimen/_12sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_my_telehealth_team"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_list_seprator_blue" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_list_blue"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="My Health"
+                android:textColor="@color/White"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:textSize="@dimen/_12sdp"/>
+            <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_2sdp"
+                android:src="@drawable/ic_my_health"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/background_list_seprator_blue" />
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

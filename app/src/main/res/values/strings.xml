@@ -1,0 +1,267 @@
+<resources>
+    <string name="app_name">HealthCare Demo App</string>
+    <string name="HealthCare">HealthCare</string>
+    <string name="lbl_enter_code">Enter Code</string>
+    <string name="lbl_date_of_birth">Date Of Birth</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_confirm">Confirm</string>
+    <string name="str_warning">Warning</string>
+    <string name="str_try_again">Try Again</string>
+    <string name="str_error">Error Response</string>
+    <string name="str_alert_confirmation">Confirmation</string>
+    <string name="lbl_welcome_symphony">Welcome to Symphony</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_confirm_password">Confirm Password</string>
+    <string name="lbl_create_login">Create Login</string>
+    <string name="lbl_login">Log in</string>
+    <string name="lbl_not_you">Not you?</string>
+    <string name="lbl_acknowledgement_heading">To use this service,please review and accept the following End User License Agreement.</string>
+    <string name="str_alert_confirm_message">This code belongs to %1$s.If this is you please confirm</string>
+    <string name="str_unable_to_connect_to_server">Unable to Connect to Server please try again later</string>
+    <string name="str_unable_to_connect_internet">Unable to Connect Internet.Please check and try again.</string>
+    <string name="string_pick_up_image">Click Anywhere to Pickup Image</string>
+
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="string_help_text"> The permission is missing.\n\nTo grant this permission click on Settings, then Permissions and turn the permission on.\n\nThen click back twice to return to the app</string>
+    <string name="quit">Exit App</string>
+    <string name="string_title_upload_progressbar_">Uploading.. Wait for a while...</string>
+    <string name="string_upload_success">File Uploaded Successfully..</string>
+    <string name="string_upload_fail">Something went wrong</string>
+    <string name="string_internet_connection_warning">Internet Connection not Available</string>
+    <string name="string_message_to_attach_file">First attach file to upload</string>
+    <string name="string_choose_image">Select Image to Upload</string>
+    <string name="string_unable_to_pick_image">Unable to Pickup Image</string>
+    <string name="string_unable_to_load_image">Unable to Load Image</string>
+    <string name="string_reselect">Click on Image to Reselect</string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="lbl_unable_to_login">Unable to log in?</string>
+    <string name="lbl_unable_to_login_message">If you are a new user of Symphony,you need to delete this app and download it again.</string>
+    <string name="lbl_call_schedule_message">Try calling now, or schedule a call at a convenient time below</string>
+    <string name="lbl_text_message">Send your healthcare provider a text and they will reply as quickly as possible</string>
+    <string name="None">None</string>
+    <string name="Dosage">Dosage</string>
+    <string name="Unit">Unit</string>
+    <string name="lbl_alert_at_time_event">At time of event</string>
+    <string name="lbl_alert_5_min_before">5 minutes before</string>
+    <string name="lbl_alert_10_min_before">10 minutes before</string>
+    <string name="lbl_alert_15_min_before">15 minutes before</string>
+    <string name="lbl_alert_30_min_before">30 minutes before</string>
+    <string name="lbl_alert_1_hour_before">1 hour before</string>
+    <string name="lbl_alert_2_hours_before">2 hours before</string>
+    <string name="lbl_alert_1_day_before">1 day before</string>
+    <string name="lbl_alert_2_days_before">2 days before</string>
+    <string name="lbl_alert_1_week_before">1 week before</string>
+
+    <!-- Select Unit Strings-->
+
+    <string name="unit_units">unit(s)</string>
+    <string name="unit_mg">mg</string>
+    <string name="unit_ml">ml</string>
+    <string name="unit_pills">pill(s)</string>
+    <string name="unit_tbsp">tbsp</string>
+    <string name="unit_tsp">tsp</string>
+    <string name="unit_drops">drop(s)</string>
+    <string name="unit_pieces">piece(s)</string>
+    <string name="unit_pus">pus</string>
+    <string name="unit_patch">patch</string>
+    <string name="unit_mcg">mcg</string>
+    <string name="unit_iu">iu</string>
+    <string name="unit_meq">meq</string>
+
+
+    <string-array name="unit_array">
+        <item>None</item>
+        <item>unit(s)</item>
+        <item>mg</item>
+        <item>ml</item>
+        <item>pill(s)</item>
+        <item>tbsp</item>
+        <item>tsp</item>
+        <item>drop(s)</item>
+        <item>piece(s)</item>
+        <item>pus</item>
+        <item>patch</item>
+        <item>mcg</item>
+        <item>iu</item>
+        <item>meq</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="select_a_health_care_provider">Select a Healthcare Provider</string>
+    <string name="physician">Physician</string>
+    <string name="Date">Date</string>
+    <string name="time_slot">Time Slot</string>
+    <string name="type_notes_here">Type notes here</string>
+    <string name="call">CALL</string>
+    <string name="no_slots_available">No Slots Available</string>
+    <string name="select_a_time_to_schedule_an_appointment">Select a time to schedule an appointment</string>
+    <string name="select_a_time_slot">Select a time slot</string>
+    <string name="text_now">Text Now</string>
+    <string name="send">SEND</string>
+    <string name="message">Message</string>
+    <string name="no_events">No Events</string>
+    <string name="today">Today</string>
+    <string name="calendars">Calendars</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="medication_reminder">Medication Reminder</string>
+    <string name="biometric_reading">Biometric Reading</string>
+    <string name="call_with">Call with</string>
+    <string name="virtual_visit_with">Virtual visit with</string>
+    <string name="physical_visit_with">Physical visit with</string>
+    <string name="created_by_you">Created by you</string>
+    <string name="my_schedule">My Schedule</string>
+    <string name="delete_reminder">Delete Reminder</string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="unknown_type">Unknown Type</string>
+    <string name="unknown_patient">Unknown Patient</string>
+    <string name="patient">Patient</string>
+    <string name="medication_remainder">Medication Remainder</string>
+    <string name="MEDICATION_REMINDER">MEDICATION REMINDER</string>
+    <string name="Call">Call</string>
+    <string name="CALL">CALL</string>
+    <string name="VIRTUAL_VISIT">VIRTUAL VISIT</string>
+    <string name="virtual_visit">Virtual Visit</string>
+    <string name="physical_visit">Physical Visit</string>
+    <string name="PHYSICAL_VISIT">PHYSICAL VISIT</string>
+    <string name="pick_a_patient">Pick a Patient</string>
+    <string name="PRIMARY">PRIMARY</string>
+    <string name="Primary">Primary</string>
+    <string name="approved">APPROVED</string>
+    <string name="secondary">Secondary</string>
+    <string name="update_office_hours">Update Office Hours</string>
+    <string name="calendar">Calendar</string>
+    <string name="search">Search</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="unknown_date">Unknown Date</string>
+    <string name="SCHEDULE">SCHEDULE</string>
+    <string name="all">All</string>
+    <string name="pending">Pending</string>
+    <string name="explore">Explore</string>
+    <string name="Approved">Approved</string>
+    <string name="approved_healthcare_providers">APPROVED HEALTHCARE PROVIDERS</string>
+    <string name="pending_specialist">PENDING SPECIALIST</string>
+    <string name="unknown_name">Unknown Name</string>
+    <string name="all_specialists">ALL SPECIALISTS</string>
+    <string name="office_colon">Office:</string>
+    <string name="office">Office</string>
+    <string name="office_number">Office Number</string>
+    <string name="website">Website</string>
+    <string name="website_url">Website Url</string>
+    <string name="location">Location</string>
+    <string name="history">History</string>
+    <string name="send_referral_request">Send Referral Request</string>
+    <string name="miles_away"> miles away</string>
+    <string name="ReferralRequestSent">Referral Request Sent</string>
+    <string name="btn_submit">Submit</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="select_physician">Select Physician</string>
+    <string name="call_now">Call Now</string>
+    <string name="video_call_now">Video Call Now</string>
+    <string name="schedule_a_video_call">Schedule a video call</string>
+    <string name="unknown_time">Unknown Time</string>
+
+
+    <!-- Time Slots -->
+
+    <string name="Patients">Patients</string>
+    <string name="Tasks">Tasks</string>
+    <string name="Calendar">Calendar</string>
+    <string name="Profile">Profile</string>
+    <string name="menu_icon_default">MENU ICON DEFAULT</string>
+    <string name="patient_s_note">Patient\'s Note:</string>
+    <string name="reject">Reject</string>
+    <string name="approve">Approve</string>
+    <string name="confirm_request_appprove_msg">Are you sure want to approve this request.You will not be able to undo this action.</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="send_a_message">Send a message</string>
+    <string name="type_your_message_optional">Type your message(optional)</string>
+    <string name="confirm_and_send">Confirm and Send</string>
+    <string name="reject_header_msg">Let your patient know why you decided to reject this referral request.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="sex_age">%1$s,%2$s years old</string>
+    <string name="pending_referrals">PENDING REFERRALS</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="save">Save</string>
+    <string name="email">Email</string>
+    <string name="unknown_email">Unknown email</string>
+    <string name="office_hours">Office Hours:</string>
+    <string name="monday">Monday:</string>
+    <string name="tuesday">Tuesday:</string>
+    <string name="wednesday">Wednesday:</string>
+    <string name="thursday">Thursday:</string>
+    <string name="friday">Friday:</string>
+    <string name="saturday">Saturday:</string>
+    <string name="sunday">Sunday:</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="badge_found">BADGE_FOUND</string>
+    <string name="load_more_messages">Load More Messages</string>
+    <string name="search_name_location_speciality">Search Name,Location,Speciality...</string>
+    <string name="no_results_found_please_try_again">No results found.Please try again</string>
+    <string name="results_by_name">Results By Name</string>
+    <string name="healthteam_found">HEALTHTEAM_FOUND</string>
+    <string name="my_telehealth_team">My Telehealth Team</string>
+    <string name="TextNotification">TextNotification</string>
+    <string name="VisitNotification">VisitNotification</string>
+    <string name="CallNotification">CallNotification</string>
+    <string name="back">Back</string>
+    <string name="archive">Archive</string>
+    <string name="no_tasks">No Tasks</string>
+    <string name="unknow_name">Unknow Name</string>
+    <string name="LOCATION">LOCATION</string>
+    <string name="street_name">Street Name</string>
+    <string name="country">Country</string>
+    <string name="country_code">Country Code</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="contact">CONTACT</string>
+    <string name="OFFICE_HOURS">OFFICE HOURS</string>
+    <string name="set_office_hours">Set Office Hours</string>
+    <string name="set_appointment_slots">Set Appointment Slots</string>
+    <string name="edit_office_hours">Edit Office Hours</string>
+    <string name="loading">Loading</string>
+    <string name="approved_specialists">APPROVED SPECIALISTS</string>
+    <string name="set_details">Set Details</string>
+    <string name="select_type">Select Type</string>
+    <string name="provide_dosage">Provide Dosage</string>
+    <string name="select_unit">Select Unit</string>
+    <string name="Alert">Alert</string>
+    <string name="patients_schedule">Patient\'s Schedule</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="search_tasks">Search Tasks</string>
+    <string name="do_not_disturb">Do Not Disturb</string>
+    <string name="account">Account</string>
+    <string name="do_not_disturb_detail">Do Not Disturb prevents you from receiving notifications from Symphony outside of your office hours</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="logout_confirm_msg">Are you sure you want to logout?</string>
+    <string name="Nevermind">Nevermind</string>
+    <string name="requires_action">Requires Action</string>
+    <string name="requires_action_msg">if you\'d like to change your primary healthcare provider,please email us at appsupport@CTRLhealth.com </string>
+    <string name="support_email">appsupport@CTRLhealth.com</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="invalid_email_id_msg">Please enter a valid email address</string>
+    <string name="invalid_email_address">Invalid Email Address</string>
+    <string name="password_reset_email_sent">Password Reset Email Sent</string>
+    <string name="remind">Remind</string>
+    <string name="remind_me">Remind Me</string>
+    <string name="in_30_minutes">in 30 Minutes</string>
+    <string name="in_1_hour">in 1 Hour</string>
+    <string name="in_2_hours">in 2 Hours</string>
+    <string name="in_3_hours">in 3 Hours</string>
+    <string name="in_10_minutes">in 10 Minutes</string>
+    <string name="reason_for_cancellation">Reason for cancellation...</string>
+    <string name="cancel_call_with">Cancel Call with </string>
+    <string name="search_calendar_events">Search Calendar Events</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    android:background="@color/White">
+
+    <EditText
+        android:id="@+id/ed_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_cancel_submit"
+        android:layout_alignParentTop="true"
+        android:hint="Enter the reason for requesting this referral"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_cancel_submit"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancel"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:background="@drawable/border_background_grey"
+            />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background_grey"
+            android:text="@string/btn_submit"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

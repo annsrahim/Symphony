@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "795859133545",
+    "firebase_url": "https://symphony-cdf54.firebaseio.com",
+    "project_id": "symphony-cdf54",
+    "storage_bucket": "symphony-cdf54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795859133545:android:bd054b7f4c92da0a",
+        "android_client_info": {
+          "package_name": "demo.acube.application.healthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795859133545-rokvgmde423s9umn8uipa7e49qsf3ef5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "symphony.acube.com.symphony",
+            "certificate_hash": "61be80b0238b17d5b36c5d7b35ed38eb9d32404e"
+          }
+        },
+        {
+          "client_id": "795859133545-ibm3kk8t2fksk3jlgvdnkepd05285k5k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCUjFdShf-NgXDp7zGCPplNG2irCVUtxo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795859133545-k6urddi6rlq238v46nevkcunk8nivlid.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.acube.symphony"
+              }
+            },
+            {
+              "client_id": "795859133545-ibm3kk8t2fksk3jlgvdnkepd05285k5k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

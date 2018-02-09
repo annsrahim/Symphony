@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    tools:context="demo.acube.application.healthcare.activity.patient.acitivity.scheduleAppointment.SelectAppointmentTypeActivity">
+
+        <include
+            layout="@layout/toolbar_layout">
+
+        </include>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@color/White">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="goToMedicationRemainder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            >
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_medication_name"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:id="@+id/iv_med_appointment_type_icon"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Medication Remainder"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/iv_med_appointment_type_icon"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    />
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:scaleType="fitCenter"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/ic_checkmark_call"
+                                    android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="@dimen/_35sdp"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+
+                                <ImageView
+                                    android:id="@+id/iv_bio_appointment_type_icon"
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:src="@drawable/ic_health" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Biometric Reading"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/iv_bio_appointment_type_icon"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:scaleType="fitCenter"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/ic_checkmark_call"
+                                    android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="@dimen/_35sdp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="goToCallRemainder"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_home_call"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:id="@+id/iv_call_appointment_type_icon"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Call"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/iv_call_appointment_type_icon"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:scaleType="fitCenter"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/ic_checkmark_call"
+                                    android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="@dimen/_35sdp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:onClick="goToVirtualVisitRemainder">
+
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/btn_contact_video"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:id="@+id/iv_virtual_appointment_type_icon"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Virtual Visit"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/iv_virtual_appointment_type_icon"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:scaleType="fitCenter"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/ic_checkmark_call"
+                                    android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="@dimen/_35sdp"/>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:onClick="goToPhysicalVisitRemainder">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_physical_visit"
+                                    android:layout_marginStart="@dimen/_10sdp"
+                                    android:id="@+id/iv_physical_appointment_type_icon"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Physical Visit"
+                                    android:layout_centerVertical="true"
+                                    android:textSize="@dimen/_10sdp"
+                                    android:layout_toEndOf="@+id/iv_physical_appointment_type_icon"
+                                    android:layout_marginStart="@dimen/_15sdp"
+                                    />
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:layout_alignParentEnd="true"
+                                    android:scaleType="fitCenter"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/_5sdp"
+                                    android:src="@drawable/ic_checkmark_call"
+                                    android:visibility="gone"/>
+
+
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@color/light_grey"
+                            android:layout_height="2dp"/>
+
+
+                </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+</LinearLayout>

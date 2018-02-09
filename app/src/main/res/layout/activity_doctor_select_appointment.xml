@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_grey"
+    tools:context="demo.acube.application.healthcare.activity.patient.acitivity.scheduleAppointment.SelectAppointmentTypeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:minHeight="?attr/actionBarSize"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/light_blue"
+                android:id="@+id/toolbar_tv_cancel"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_details"
+                android:textColor="@color/light_blue"
+                android:id="@+id/toolbar_tv_title"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/White">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToMedicationRemainder"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:src="@drawable/ic_medication_name"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:id="@+id/iv_med_appointment_type_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/medication_remainder"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/iv_med_appointment_type_icon"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_checkmark_call"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/_35sdp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+
+                <ImageView
+                    android:id="@+id/iv_bio_appointment_type_icon"
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_health" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/biometric_reading"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/iv_bio_appointment_type_icon"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_checkmark_call"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/_35sdp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToCallRemainder"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_home_call"
+                    android:id="@+id/iv_call_appointment_type_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/Call"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/iv_call_appointment_type_icon"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_checkmark_call"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/_35sdp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:onClick="goToVirtualVisitRemainder">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/btn_contact_video"
+                    android:id="@+id/iv_virtual_appointment_type_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/virtual_visit"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/iv_virtual_appointment_type_icon"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_checkmark_call"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"
+                android:layout_marginStart="@dimen/_35sdp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:onClick="goToPhysicalVisitRemainder">
+
+                <ImageView
+                    android:layout_width="@dimen/_22sdp"
+                    android:layout_height="@dimen/_22sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:src="@drawable/ic_physical_visit"
+                    android:id="@+id/iv_physical_appointment_type_icon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/physical_visit"
+                    android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/iv_physical_appointment_type_icon"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/ic_checkmark_call"
+                    android:visibility="gone"/>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/light_grey"
+                android:layout_height="2dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

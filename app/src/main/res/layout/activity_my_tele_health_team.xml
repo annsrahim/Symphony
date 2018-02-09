@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="demo.acube.application.healthcare.activity.patient.acitivity.myTeleHealthTeam.MyTeleHealthTeamActivity">
+    <RelativeLayout
+        android:id="@+id/rlMenuContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:titleTextColor="@color/White"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:id="@+id/toolbar_title" />
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:id="@+id/ll_search_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/White"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:visibility="gone"
+            >
+
+            <EditText
+                android:id="@+id/ed_search_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_name_location_speciality"
+                android:textSize="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rounder_corner_grey_background"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_search_grey_700_18dp"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_weight="80"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:textColor="@color/toolbar_blue"
+                android:layout_weight="20"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:onClick="closeSearchMenu"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameSearchResults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMenuContainer"
+        android:background="@color/White"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@color/White"
+                android:gravity="center_horizontal"
+                android:text="@string/no_results_found_please_try_again"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tv_no_results"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:background="@color/White"
+                android:gravity="center_horizontal"
+                android:text="@string/no_results_found_please_try_again"
+                android:textColor="@color/light_blue"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lvSearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rlMenuContainer">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_all_team"
+                android:textSize="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/all"
+                android:textColor="@color/black"
+                android:onClick="showAllTeam"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_approved_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/Approved"
+                android:onClick="showApprovedTeam"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_pending_team"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/pending"
+                android:gravity="center"
+                android:onClick="showPendingTeam"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_explore_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="@string/explore"
+                android:onClick="showExploreScreen"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_grey"/>
+
+
+
+        <!-- View pager to swipe views -->
+        <demo.acube.application.healthcare.helper.custom.NonSwipeableViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

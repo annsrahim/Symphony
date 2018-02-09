@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.doctor.activity.dashboard.DoctorHomeActivity">
+
+
+    <ImageView
+        android:id="@+id/fab_circle_menu"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/ic_menu_default"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/menu_icon_default"
+        />
+
+    <FrameLayout
+        android:id="@+id/frame_layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@color/White"
+        android:onClick="closeMenu"
+        android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/White"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/White"
+                    android:minHeight="?attr/actionBarSize"
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <RelativeLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_centerVertical="true"
+                            android:onClick="goToArchiveActivity"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/btn_archive" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Tasks"
+                            android:textColor="@color/light_blue"
+                            android:id="@+id/toolbar_tv_title"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:onClick="openSearchMenu"
+                                android:visibility="visible"
+                                android:src="@drawable/ic_search_blue" />
+
+                            <ImageView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="@dimen/_20sdp"
+                                android:src="@drawable/ic_add_blue"
+
+                                android:onClick="selectAppointment"
+                                />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </android.support.v7.widget.Toolbar>
+                <LinearLayout
+                    android:id="@+id/ll_search_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/White"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:visibility="gone"
+                    >
+
+                    <EditText
+                        android:id="@+id/ed_search_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/search_tasks"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/rounder_corner_grey_background"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:drawableStart="@drawable/ic_search_grey_700_18dp"
+                        android:gravity="start|center_vertical"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:layout_weight="80"
+                        android:maxLines="1"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:textColor="@color/toolbar_blue"
+                        android:layout_weight="20"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textSize="@dimen/_13sdp"
+                        android:onClick="closeSearchMenu"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/frameSearchResults"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@color/White"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_no_results"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        android:background="@color/White"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_results_found_please_try_again"
+                        android:textColor="@color/light_blue"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <!--<ListView-->
+                        <!--android:id="@+id/lvSearchResult"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent" />-->
+
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameSearchContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/lvSearchResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </FrameLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:visibility="gone"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/black"
+                app:tabTextColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey_3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/llTabLayoutContainer"
+                android:orientation="horizontal"
+                android:background="@color/White">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/llAllAlertContianer"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/tvTabAllAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="ALL(0)"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/llCallAlertContianer"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/drawble_call_icon" />
+                    <TextView
+                        android:id="@+id/tvTablCallALert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="0"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/llChatAlertContianer"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/drawble_chat_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:id="@+id/tvTabChatALert"
+                        android:gravity="center"
+
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/llVirtualVisitAlertContianer"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/drawble_video_icon"/>
+                    <TextView
+                        android:id="@+id/tvTabVideoAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/llPhysicalVisitAlertContianer"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/ic_physical_visit"/>
+                    <TextView
+                        android:id="@+id/tvTabVisitAlert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:paddingRight="@dimen/_5sdp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey_3"/>
+
+
+            <!-- View pager to swipe views -->
+            <demo.acube.application.healthcare.helper.custom.NonSwipeableViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="8dp"
+
+                />
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

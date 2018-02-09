@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    android:orientation="vertical"
+    tools:context="demo.acube.application.healthcare.activity.registrationUser.UserRegisterActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/ic_health_care_logo" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/lbl_email"
+            android:background="@color/White"/>
+
+        <EditText
+            android:id="@+id/tvPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/White"
+            android:ems="10"
+            android:hint="@string/lbl_password"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingTop="@dimen/_10sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_forgot_password"
+                android:text="@string/lbl_forgot_password"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:onClick="doForgotPassword"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_unable_to_log_in"
+                android:text="@string/lbl_unable_to_login"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/_10sdp"
+                android:onClick="doUnableToLoginProcess"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_create_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_blue"
+            android:layout_marginLeft="@dimen/_75sdp"
+            android:layout_marginRight="@dimen/_75sdp"
+            android:gravity="center"
+            android:textColor="@color/White"
+            android:layout_gravity="center"
+            android:text="@string/lbl_login"
+            android:onClick="doCheckLogin"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

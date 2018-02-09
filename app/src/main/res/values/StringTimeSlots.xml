@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_slots">
+        <item>12:00 AM - 12:30 AM</item>
+        <item>12:30 AM - 01:00 AM</item>
+        <item>01:00 AM - 01:30 AM</item>
+        <item>01:30 AM - 02:00 AM</item>
+        <item>02:00 AM - 02:30 AM</item>
+        <item>02:30 AM - 03:00 AM</item>
+        <item>03:00 AM - 03:30 AM</item>
+        <item>03:30 AM - 04:00 AM</item>
+
+
+    </string-array>
+</resources>

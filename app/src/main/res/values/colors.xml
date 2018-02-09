@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="White">#FFFFFF</color>
+    <color name="light_grey">#EAEAEA</color>
+    <color name="light_grey_2">#E5E5E5</color>
+    <color name="light_grey_3">#CFCFCF</color>
+    <color name="dark_grey_3">#6C6C6C</color>
+
+    <color name="hint_text">#EEEEF2</color>
+    <color name="light_white">#FEFBFB</color>
+    <color name="light_blue">#009CAC</color>
+    <color name="dark_red">#CA2121</color>
+    <color name="black">#000000</color>0B9EAD
+    <color name="toolbar_text_blue">#0B9EAD</color>
+    <color name="toolbar_video_call_blue">#82D9F4</color>
+    <color name="toolbar_call_blue">#70D9D3</color>
+    <color name="btn_bg_video_call_blue">#00BCED</color>
+    <color name="btn_bg_call_blue">#39CDC4</color>
+    <color name="toolbar_blue">#3EB5C0</color>
+    <color name="toolbar_orange">#FFC062</color>
+    <color name="background_list_blue">#00A6B4</color>
+    <color name="background_list_seprator_blue">#009DB9</color>
+    <color name="background_list_seprator_grey">#C6C6C6</color>
+    <color name="notification_bg_red">#EA141E</color>
+    <color name="call_reject_red">#FF3B36</color>
+    <color name="call_accept_green">#38D96E</color>
+    <color name="heading_green">#28C593</color>
+    <color name="bg_dark_grey">#5E5E5E</color>
+    <color name="transparent_black">#BF000000</color>
+    <color name="toolbar_red">#EF6D64</color>
+    <color name="bg_grey">#BBBBBE</color>
+    <color name="default_text_color">#757575</color>
+    <color name="default_text_color_2">#5A5A5A</color>
+    <color name="text_blue">#0079F9</color>
+    <color name="orange_text_color">#FFA02D</color>
+
+
+    <color name="swipe_red">#ED4C41</color>
+    <color name="swipe_oragne">#FFA02D</color>
+    <color name="swipe_blue">#39CDC4</color>
+</resources>

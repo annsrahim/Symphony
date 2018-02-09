@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+                <RelativeLayout
+                    android:orientation="vertical" android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/back"
+                            android:textColor="@color/light_blue"
+                            android:id="@+id/toolbar_tv_back"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Alert"
+                            android:textColor="@color/light_blue"
+                            android:id="@+id/toolbar_tv_title"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"/>
+
+
+                </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/rl_alert_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@color/White"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_toEndOf="@+id/iv_dosage_select"
+                    android:text="@string/None"
+                    android:textSize="@dimen/_10sdp" />
+
+                <ImageView
+                    android:id="@+id/iv_alert_none"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_checkmark_red"
+                    android:visibility="gone" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/White"
+            android:layout_marginTop="@dimen/_20sdp">
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_at_event_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_at_time_event"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_at_event_time"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_5_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_5_min_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_5_min_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/light_grey"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_10_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_10_min_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_10_min"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_15_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_15_min_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_15_min"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_15_min"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_30_min"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_30_min_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_30_min"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_30_min"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_1_hour_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_1_hour_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_1_hour_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_1_hour"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:background="@color/light_grey"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rl_alert_2_hour_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+
+                            android:text="@string/lbl_alert_2_hours_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_2_hour_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_2_hour"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_1_day_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_1_day_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_1_day_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_1_day"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_2_days_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_2_days_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_2_days_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/ll_line_2_day"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@color/light_grey"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="@dimen/_25sdp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_alert_1_week_before"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/White"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_toEndOf="@+id/iv_dosage_select"
+                            android:text="@string/lbl_alert_1_week_before"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <ImageView
+                            android:id="@+id/iv_alert_1_week_before"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_checkmark_red"
+                            android:visibility="gone" />
+
+
+                </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/gpc_placeholder_physician_full"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:id="@+id/iv_doctors_icon"
+        android:layout_alignParentStart="true"/>
+    <LinearLayout
+        android:id="@+id/llDoctorDetailsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/iv_doctors_icon"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginStart="@dimen/_5sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sdp"
+                android:id="@+id/list_tv_doctor_name"
+                android:text="Dr, Luke Nicole"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/list_tv_speciality_type"
+                android:text="Caridologist"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_5sdp">
+        <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_checkmark_call"
+            android:id="@+id/list_iv_checkmark_call"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_below="@+id/iv_doctors_icon"/>
+
+
+</RelativeLayout>
